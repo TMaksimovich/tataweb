@@ -3,11 +3,66 @@
 
 body
 	font-family: $default-font
-	background-color: $accent
 	font-weight: normal
-	font-size: 14px
+	font-size: 1.8rem
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.35
 	-webkit-font-smoothing: antialised
 	overflow-x: hidden
+
+a
+	text-decoration: none
+input,
+textarea,
+button
+	outline: none
+
+canvas
+	display: block
+	vertical-align: bottom
+
+h1
+	font-size: 4.8rem
+h2
+	font-size: 4.0rem
+h3
+	font-size: 3.6rem
+h4
+	font-size: 2.1rem
+h5,
+h6
+	font-size: 1.8rem
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight: normal
+
+section
+	padding: 100px 0
+	color: #000
+
+.dark
+	background-color: $dark
+	color: #fff
+
+.title-section
+	position: relative
+	padding-top: 20px
+	margin: 0
+	font-family: $bold-font
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		max-width: 555px
+		height: 8px
+		background-color: #000
+
+.dark .title-section:before
+	background-color: #fff

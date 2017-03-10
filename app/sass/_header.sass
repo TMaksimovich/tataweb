@@ -1,0 +1,122 @@
+#particles-js
+	position:absolute
+	width: 100%
+	height: 100%
+	background-color: #000000
+	background-image: url("../img/header.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+.particles-js-canvas-el
+	position: absolute
+	top: 0
+	left: 0
+.main-head
+	position: relative
+.toggle-menu
+	background-color: $dark
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+.sandwich
+	width: 34px
+	height: 34px
+	position: absolute
+	top: 12px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+	display: block
+	& > span
+		display: block
+		position: relative
+		width: 34px
+		height: 3px
+		background-color: #fff
+		border: none
+		border-radius: 4px 4px 4px 4px
+	&.active .sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	&.active .sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	&.active .sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+.sw-topper,
+.sw-bottom
+	transition: transform 0.5s, top 0.2s
+.sw-topper
+	top: 0
+.sw-bottom
+	top: 8px
+	transition-delay: 0.2s, 0s
+.sw-footer
+	top: 16px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.top-menu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.8)
+	z-index: 50
+	top: 0
+	right: 0
+	display: none
+	ul
+		margin-top: 120px
+		text-align: center
+		list-style-type: none
+		padding-left: 0
+	li:nth-child(1) a
+		animation-duration: 0.5s
+	a
+		color: #fff
+		display: block
+		padding: 20px 0
+		text-transform: uppercase
+		text-decoration: none
+		font-size: 16px
+		letter-spacing: 4px
+		transition: all 0.6s ease
+.h-opacity
+	opacity: 0.1
+	transition: all 0.2s ease
+
+.header-wrapper
+    display: table
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+.header-desc
+    display: table-row
+.header-center
+    display: table-cell
+    text-align: center
+    vertical-align: middle
+.header-title
+    display: block
+    padding: 10px 20px
+    margin: 0
+    text-transform: uppercase
+    color: #fff
+    font-family: $bold-font
+.header-subtitle
+    margin: 0
+    color: #fff
+    letter-spacing: 2px
+    font-family: $light-font
+
+
+
