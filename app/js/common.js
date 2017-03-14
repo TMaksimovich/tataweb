@@ -9,6 +9,12 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+	 //Плавная прокрутка
+    $("body").on('click', '[href*="#"]', function(e){
+	  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top}, 1000);
+	  e.preventDefault();
+	});
+
 	// картинка в хедере занимает всю высоту окна
 	function heightDetect(){
 		$(".main-head").css("height", $(window).height());

@@ -1,0 +1,129 @@
+.contact-column
+	margin-top: 50px
+.contact-item
+	margin-bottom: 35px
+	padding-left: 55px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 7px
+		left: 0
+		background: url('../img/sprite.png') no-repeat;
+		display: block
+	&.adress:before
+		background-position: 0 0
+		width: 41px
+		height: 40px
+	&.phone:before
+		background-position: -1px -90px
+		width: 40px
+		height: 40px
+	&.email:before
+		background-position: -1px -184px
+		width: 40px
+		height: 27px
+	h4
+		font-family: $bold-font
+		margin: 0
+	p
+		margin: 0
+	a,
+	p
+		font-size: 1.6rem
+		color: $medium
+form
+	margin-top: 50px
+input[type="text"],
+input[type="email"],
+textarea
+	display: block
+	width: 100%
+	margin-bottom: 20px
+	padding: 7px 10px 7px 49px
+	font-size: 1.6rem
+	color: $dark
+	font-family: $light-font
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+textarea
+	border: 2px solid #000
+textarea
+	resize: vertical
+	min-height: 113px
+input[type="submit"]
+	background-color: transparent
+	font-size: 1.8rem
+	font-family: $bold-font
+	width: 176px
+	padding: 5px 49px 5px 10px
+	text-align: left
+label
+	position: relative
+	display: block
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		background: url('../img/sprite.png') no-repeat
+		display: block
+		margin: auto
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		height: 100%
+		width: 2px
+		background-color: #000
+.name-field:after,
+.email-field:after,
+.message-field:after
+	left: 38px
+.name-field:before,
+.email-field:before,
+.message-field:before
+	left: 10px
+.name-field:before
+	background-position: -67px -37px
+	width: 14px
+	height: 18px
+.email-field:before
+	background-position: -65px -97px
+	width: 18px
+	height: 14px
+.message-field:before
+	background-position: -65px -191px
+	width: 18px
+	height: 12px
+.submit-field
+	width: 176px
+	&:after
+		right: 38px
+	&:before
+		right: 10px
+		background-position: -62px -4px
+		width: 17px
+		height: 18px
+label.submit-field:hover:before
+	animation: arrow  0.5s infinite ease
+
+@keyframes arrow
+	from
+		right: 20px
+	to
+		right: 5px
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+	color: $dark
+input::-moz-placeholder,
+textarea::-moz-placeholder
+	color: $dark
+input:-moz-placeholder,
+textarea:-moz-placeholder
+	color: $dark
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+	color: $dark

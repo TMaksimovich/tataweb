@@ -280,6 +280,8 @@ section {
     letter-spacing: 4px;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease; }
+    .top-menu a:hover {
+      text-decoration: underline; }
 
 .h-opacity {
   opacity: 0.1;
@@ -351,7 +353,8 @@ section {
 
 .resume {
   position: relative;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 50px; }
 
 .molecules {
   width: 100%;
@@ -367,7 +370,7 @@ section {
   width: 33.3%;
   padding: 0 15px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   font-size: 1.6rem;
   background-color: #fff; }
   .resume-column:nth-of-type(4) .resume-year {
@@ -400,3 +403,285 @@ section {
       position: absolute;
       top: 0;
       left: 0; }
+
+.filter-div {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center; }
+
+.filter-list {
+  list-style: none;
+  padding-left: 0; }
+
+.filter {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer; }
+  .filter.active, .filter:hover {
+    border-bottom: 2px solid #fff; }
+
+.portfolio-item {
+  display: none;
+  padding: 0; }
+  .portfolio-item img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .portfolio-item h3 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem; }
+  .portfolio-item p {
+    font-size: 1.6rem; }
+
+.popup-content {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .popup-content:hover {
+    background-color: #fff;
+    color: #000; }
+  .popup-content:active, .popup-content:focus, .popup-content:hover {
+    text-decoration: none; }
+
+.port-item-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-top: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .port-item-container a {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 7px 10px;
+    margin-top: 20px;
+    display: inline-block;
+    outline: none; }
+
+.portfolio-item:hover .port-item-container {
+  opacity: 1;
+  padding-top: 20%; }
+
+.port-desc {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto; }
+  .port-desc p,
+  .port-desc h3 {
+    padding: 20px;
+    padding-bottom: 0; }
+  .port-desc p {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #888; }
+  .port-desc h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 25px;
+    color: #333333; }
+  .port-desc img {
+    margin-top: 10px;
+    width: 100%; }
+
+.modal-box-content {
+  position: relative; }
+  .modal-box-content .port-link {
+    color: #FF6347;
+    margin-left: 20px;
+    font-size: 1.6rem; }
+
+.contact-column {
+  margin-top: 50px; }
+
+.contact-item {
+  margin-bottom: 35px;
+  padding-left: 55px;
+  position: relative; }
+  .contact-item:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background: url("../img/sprite.png") no-repeat;
+    display: block; }
+  .contact-item.adress:before {
+    background-position: 0 0;
+    width: 41px;
+    height: 40px; }
+  .contact-item.phone:before {
+    background-position: -1px -90px;
+    width: 40px;
+    height: 40px; }
+  .contact-item.email:before {
+    background-position: -1px -184px;
+    width: 40px;
+    height: 27px; }
+  .contact-item h4 {
+    font-family: "LatoBold", sans-serif;
+    margin: 0; }
+  .contact-item p {
+    margin: 0; }
+  .contact-item a,
+  .contact-item p {
+    font-size: 1.6rem;
+    color: #333333; }
+
+form {
+  margin-top: 50px; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px 10px 7px 49px;
+  font-size: 1.6rem;
+  color: #222222;
+  font-family: "LatoLight", sans-serif; }
+
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 2px solid #000; }
+
+textarea {
+  resize: vertical;
+  min-height: 113px; }
+
+input[type="submit"] {
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-family: "LatoBold", sans-serif;
+  width: 176px;
+  padding: 5px 49px 5px 10px;
+  text-align: left; }
+
+label {
+  position: relative;
+  display: block; }
+  label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: url("../img/sprite.png") no-repeat;
+    display: block;
+    margin: auto; }
+  label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #000; }
+
+.name-field:after,
+.email-field:after,
+.message-field:after {
+  left: 38px; }
+
+.name-field:before,
+.email-field:before,
+.message-field:before {
+  left: 10px; }
+
+.name-field:before {
+  background-position: -67px -37px;
+  width: 14px;
+  height: 18px; }
+
+.email-field:before {
+  background-position: -65px -97px;
+  width: 18px;
+  height: 14px; }
+
+.message-field:before {
+  background-position: -65px -191px;
+  width: 18px;
+  height: 12px; }
+
+.submit-field {
+  width: 176px; }
+  .submit-field:after {
+    right: 38px; }
+  .submit-field:before {
+    right: 10px;
+    background-position: -62px -4px;
+    width: 17px;
+    height: 18px; }
+
+label.submit-field:hover:before {
+  -webkit-animation: arrow  0.5s infinite ease;
+          animation: arrow  0.5s infinite ease; }
+
+@-webkit-keyframes arrow {
+  from {
+    right: 20px; }
+  to {
+    right: 5px; } }
+
+@keyframes arrow {
+  from {
+    right: 20px; }
+  to {
+    right: 5px; } }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #222222; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #222222; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #222222; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #222222; }
+
+footer {
+  padding: 45px 0; }
+
+.copyright {
+  opacity: 0.5;
+  font-size: 1.6rem; }
+
+.social-list-round {
+  text-align: right;
+  margin-top: 3px; }
+  .social-list-round li {
+    margin: 0 2px; }
+  .social-list-round a {
+    color: #fff;
+    border: 2px solid #fff;
+    width: 42px;
+    height: 42px;
+    line-height: 42px; }
+    .social-list-round a:hover {
+      background-color: #fff;
+      color: #000; }

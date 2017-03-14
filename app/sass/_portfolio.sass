@@ -1,0 +1,97 @@
+.filter-div
+	margin-top: 45px
+	margin-bottom: 45px
+	text-align: center
+.filter-list
+	list-style: none
+	padding-left: 0
+.filter
+	display: inline-block
+	vertical-align: top
+	margin: 0 10px
+	font-size: 1.4rem
+	text-transform: uppercase
+	letter-spacing: 0.5px
+	cursor: pointer
+	&.active,
+	&:hover
+		border-bottom: 2px solid #fff
+.portfolio-item
+	display: none
+	padding: 0
+	img
+		width: 100%
+		object-fit: cover
+	h3
+		color: #fff
+		margin-top: 0
+		margin-bottom: 0
+		letter-spacing: 3px
+		text-align: center
+		text-transform: uppercase
+		font-size: 1.4rem
+	p
+		font-size: 1.6rem
+.popup-content
+	transition: all 0.5s
+	&:hover
+		background-color: #fff
+		color: #000
+	&:active,
+	&:focus,
+	&:hover
+		text-decoration: none
+.port-item-container
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.8)
+	text-align: center
+	padding-top: 15%
+	padding-left: 10px
+	padding-right: 10px
+	opacity: 0
+	transition: all 0.5s
+	a
+		border: 2px solid #fff
+		color: #fff
+		padding: 7px 10px
+		margin-top: 20px
+		display: inline-block
+		outline: none
+.portfolio-item:hover .port-item-container
+	opacity: 1
+	padding-top: 20%
+.port-desc
+	background-color: #fff
+	max-width: 500px
+	margin: auto
+	p,
+	h3
+		padding: 20px
+		padding-bottom: 0
+	p
+		margin-top: 0
+		font-size: 1.6rem
+		color: #888
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 1.6rem
+		letter-spacing: 1px
+		margin-top: 20px
+		margin-bottom: 0
+		padding-top: 25px
+		color: $medium
+	img
+		margin-top: 10px
+		width: 100%
+.modal-box-content
+	position: relative
+	.port-link
+		color: #FF6347
+		margin-left: 20px
+		font-size: 1.6rem
