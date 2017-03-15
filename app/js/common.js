@@ -10,7 +10,7 @@ $(function() {
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 	 //Плавная прокрутка
-    $("body").on('click', '[href*="#"]', function(e){
+    $("body").on('click', '.top-menu a[href*="#"]', function(e){
 	  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top}, 1000);
 	  e.preventDefault();
 	});
